@@ -1,16 +1,41 @@
 <!-- Main Content -->
 <div class="container" ng-controller="MainController as vm">
 
-    <div class="row">
-      <div class="col-md-12">
-        <img src="/images/superfan_layout.png">
-      </div>
+<div id="demo-paddings" class="glide">
+
+    <div class="glide__arrows">
+        <span class="glide__arrow prev" data-glide-dir="<">prev</span>
+        <span class="glide__arrow next" data-glide-dir=">">next</span>
     </div>
+
+    <div class="glide__wrapper">
+        <div class="glide__track">
+            <div class="glide__slide">
+                <div class="box" style="background-color: #77A7FB;">1</div>
+            </div>
+            <div class="glide__slide">
+                <div class="box" style="background-color: #FBCB43;">2</div>
+            </div>
+            <div class="glide__slide">
+                <div class="box" style="background-color: #34B67A;">3</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="glide__bullets"></div>
+
+</div>
 
     <div class="row">
       <div class="col-md-12">
       <a class="btn btn-default" ui-sref="userLogin" role="button">Login!</a>
       </div>
     </div>
+
+<script>
+    $("#Glide").glide({
+        type: "carousel"
+    });
+</script>
 
 </div>

@@ -21,7 +21,7 @@ var twitterController = require('../controllers/twitter');
 router.post('/auth/instagram', authController.instagram);
 
 // twitter auth path
-router.post('/twitter', twitterController.twitter);
+router.post('/oauth/twitter', twitterController.twitter);
 
 
 module.exports = router;
